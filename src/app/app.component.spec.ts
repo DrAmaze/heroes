@@ -4,16 +4,18 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
       ],
       declarations: [
         AppComponent,
         HeroDetailComponent,
-        CharactersComponent
+        CharactersComponent,
+        MessagesComponent
       ],
     }).compileComponents();
   }));
