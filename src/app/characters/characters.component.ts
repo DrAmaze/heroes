@@ -10,16 +10,11 @@ import { CharacterService } from '../character.service';
 })
 export class CharactersComponent implements OnInit {
   heroes: Hero[];
-  selectedHero: Hero;
 
   constructor(private characterService: CharacterService) { }
 
   ngOnInit() {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
   }
 
   getHeroes(): void {
